@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="sky_blue">#87CEEB</color> <!-- Light Sky Blue -->
+    <color name="midnight_blue">#2C3E50</color> <!-- Dark Midnight Blue -->
+    <color name="sunset_orange">#FF6B6B</color> <!-- Soft Sunset Orange -->
+
+    <!-- Accent Colors -->
+    <color name="lime_green">#BADC58</color> <!-- Lime Green for Highlights -->
+    <color name="mustard_yellow">#FFCA28</color> <!-- Warm Mustard Yellow -->
+    <color name="berry_purple">#9B59B6</color> <!-- Bold Berry Purple -->
+
+    <!-- Neutral Tones -->
+    <color name="cloud_white">#FAFAFA</color> <!-- Cloudy Off-White -->
+    <color name="slate_grey">#607D8B</color> <!-- Slate Grey for Text -->
+    <color name="charcoal_black">#1E272E</color> <!-- Charcoal Black for Text -->
+    <color name="soft_gray">#ECECEC</color> <!-- Light Soft Grey for Backgrounds -->
+
+    <!-- Success, Warning, and Error Colors -->
+    <color name="forest_green">#2ECC71</color> <!-- Forest Green for Success -->
+    <color name="golden_yellow">#FFC107</color> <!-- Golden Yellow for Warnings -->
+    <color name="fire_red">#E74C3C</color> <!-- Fire Red for Errors -->
+
+    <!-- Pastel Tones -->
+    <color name="pastel_mint">#A8E6CF</color> <!-- Mint Pastel Green -->
+    <color name="pastel_peach">#FFD3B5</color> <!-- Peach Pastel Orange -->
+    <color name="pastel_lavender">#D4A5FF</color> <!-- Lavender Pastel Purple -->
+
+    <!-- Overlay and Transparent Colors -->
+    <color name="transparent_black">#80000000</color> <!-- 50% Transparent Black -->
+    <color name="transparent_white">#40FFFFFF</color> <!-- 25% Transparent White -->
+</resources>
