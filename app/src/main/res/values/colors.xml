@@ -13,8 +13,12 @@
     <!-- Neutral Tones -->
     <color name="cloud_white">#FAFAFA</color> <!-- Cloudy Off-White -->
     <color name="slate_grey">#607D8B</color> <!-- Slate Grey for Text -->
-    <color name="charcoal_black">#1E272E</color> <!-- Charcoal Black for Text -->
-    <color name="soft_gray">#ECECEC</color> <!-- Light Soft Grey for Backgrounds -->
+    <color name="charcoal_black">#1E272E</color>
+    <color name="dark_grey">#4d6357</color>
+    <color name="light_grey">#CFe9d9</color><!-- Charcoal Black for Text -->
+    <color name="soft_gray">#ECECEC</color>
+    <color name="green_forest">#006C4C</color>
+    <color name="emerald_green">#89F8C7</color><!-- Light Soft Grey for Backgrounds -->
 
     <!-- Success, Warning, and Error Colors -->
     <color name="forest_green">#2ECC71</color> <!-- Forest Green for Success -->

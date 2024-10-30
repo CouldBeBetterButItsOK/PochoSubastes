@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/themeDarkBT"
+        android:icon="@drawable/ic_nightmode"
+        android:title="Dark Theme" />
+    <item
+        android:id="@+id/themeLightBT"
+        android:icon="@drawable/ic_sunmode"
+        android:title="Light Theme" />
+</group>
+</menu>
