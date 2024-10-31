@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)}
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+}
 android {
     namespace = "com.dam.xevi.pochosubastes"
     compileSdk = 34
@@ -46,8 +48,15 @@ android {
         implementation(libs.androidx.navigation.fragment.ktx)
         implementation(libs.androidx.navigation.dynamic.features.fragment)
         implementation(libs.androidx.navigation.ui.ktx)
+        implementation(libs.androidx.fragment)
+        implementation(libs.play.services.maps)
+        implementation(libs.androidx.runtime.saved.instance.state)
+        implementation(libs.androidx.ui.tooling.preview)
         testImplementation(libs.junit)
         androidTestImplementation(libs.androidx.junit)
         androidTestImplementation(libs.androidx.espresso.core)
+        implementation("com.squareup.picasso:picasso:2.71828")
+
+
 
     }

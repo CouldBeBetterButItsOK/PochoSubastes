@@ -19,8 +19,11 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:menu="@menu/toolbar_menu">
-
         </com.google.android.material.appbar.MaterialToolbar>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -31,10 +34,7 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/header"
         app:menu="@menu/app_menu" />
-    <FrameLayout
-        android:id="@+id/nav_host_fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

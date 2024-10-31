@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_template">
+
+    <!-- Avatar ImageView -->
+
+    <ImageView
+        android:id="@+id/SoldImg"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="72dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/price"
+        app:layout_constraintTop_toTopOf="@+id/price"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_sold" />
+
+    <TextView
+        android:id="@+id/sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/baloo_da_2_extrabold"
+        android:text="Sold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subDate"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <ImageView
+        android:id="@+id/objImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <!-- Superhero Name TextView -->
+    <TextView
+        android:id="@+id/objName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/baloo_da_2_extrabold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/objImg"
+        app:layout_constraintTop_toTopOf="@+id/objImg"
+        tools:text="Object Name" />
+
+    <!-- Real Name TextView -->
+    <TextView
+        android:id="@+id/subDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/baloo_da_2_medium"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/objImg"
+        app:layout_constraintTop_toBottomOf="@+id/objName"
+        tools:text="Subast Date" />
+
+    <!-- Publisher TextView -->
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/baloo_da_2_medium"
+        android:textColor="#575757"
+        app:layout_constraintBottom_toBottomOf="@+id/objImg"
+        app:layout_constraintStart_toEndOf="@+id/objImg"
+        app:layout_constraintTop_toBottomOf="@+id/subDate"
+        tools:text="StartingPrice" />
+
+
+
+
+    <!-- Edit and Delete Buttons in LinearLayout -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

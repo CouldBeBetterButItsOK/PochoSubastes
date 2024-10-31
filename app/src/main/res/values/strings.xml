@@ -2,6 +2,27 @@
     <string name="app_name">PochoSubastes</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="categories">
+        <item>Art</item>
+        <item>Music</item>
+        <item>History</item>
+        <item>Technology</item>
+        <item>Food</item>
+        <item>Motor</item>
+        <item>Decor</item>
+        <item>Coins</item>
+        <item>Weapons</item>
+        <item>Furniture</item>
+        <item>Artifacts</item>
+    </string-array>
+    <string-array name="qualitys">
+        <item>Excellent</item>
+        <item>Almost Excellent</item>
+        <item>Good</item>
+        <item>Restored</item>
+        <item>Used</item>
+        <item>Worn</item>
+        <item>Bad</item>
+    </string-array>
 </resources>

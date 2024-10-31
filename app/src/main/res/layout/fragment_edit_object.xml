@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="45dp"
+    tools:context=".fragments.EditObjectFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_template">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_da_2_extrabold"
+            android:text="Object"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintVertical_bias="0.76">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Name:   "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/nomObj"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Object name"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Date:   "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_calendar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Category:   "
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Quality:   "
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/quality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Period:   "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/period"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Period"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Origin:   "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/origin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Origin"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Price:   "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/startingPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="0.00€"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Description:   "
+                    android:textSize="20sp" />
+
+                <View
+
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/item_template"
+                android:gravity="start"
+                android:hint="Description...."
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/sold"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sold" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/cancelbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_cancel"
+                    app:backgroundTint="@color/sunset_orange"
+                    app:fabSize="normal"
+                    app:layout_anchorGravity="bottom|end" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/acceptbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_addbt"
+                    app:backgroundTint="?attr/colorPrimary"
+                    app:fabSize="normal"
+                    app:layout_anchorGravity="bottom|end" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

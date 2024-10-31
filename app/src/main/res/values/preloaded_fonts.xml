@@ -3,5 +3,6 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aguafina_script</item>
         <item>@font/baloo_da_2_extrabold</item>
+        <item>@font/baloo_da_2_medium</item>
     </array>
 </resources>
